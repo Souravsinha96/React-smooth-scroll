@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { animateScroll as scroll } from "react-scroll";
 import {
   Nav,
   NavbarContainer,
@@ -27,26 +28,69 @@ const Navbar = ({ toggle }) => {
       window.removeEventListener("scroll", changeNav);
     };
   }, []);
+  const toggleHome = () => {
+    // react scroll
+    scroll.scrollToTop();
+  };
+
   return (
     <>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
-          <NavLogo to="/">Bitin</NavLogo>
+          <NavLogo to="/" onClick={toggleHome}>
+            Bitin
+          </NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="about">About </NavLinks>
+              <NavLinks
+                to="about"
+                smooth={true}
+                duration={500}
+                spy={true}
+                offset={-80}
+                exact={1}
+              >
+                About
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="discover">Discover</NavLinks>
+              <NavLinks
+                to="discover"
+                smooth={true}
+                duration={500}
+                spy={true}
+                offset={-80}
+                exact={1}
+              >
+                Discover
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="services">Services</NavLinks>
+              <NavLinks
+                to="services"
+                smooth={true}
+                duration={500}
+                spy={true}
+                offset={-80}
+                exact={1}
+              >
+                Services
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="signup">Sign Up</NavLinks>
+              <NavLinks
+                to="signup"
+                smooth={true}
+                duration={500}
+                spy={true}
+                offset={-80}
+                exact={1}
+              >
+                Sign Up
+              </NavLinks>
             </NavItem>
           </NavMenu>
           <NavBtn>

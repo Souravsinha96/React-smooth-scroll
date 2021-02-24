@@ -35,7 +35,7 @@ export const NavLogo = styled(LinkR)`
   display: flex;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin-left: 24px;
   align-items: center;
 `;
@@ -75,8 +75,9 @@ export const NavLinks = styled(LinkS)`
   padding: 0 1rem;
   cursor: pointer;
   height: 100%;
-  &:active {
-    border-bottom: 2px solid #01bf71;
+  &.active {
+    border-bottom: 4px solid #01bf71;
+    transition: all 0.3s ease;
   }
 `;
 
