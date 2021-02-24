@@ -34,7 +34,7 @@ export const homeObjTwo = {
     "We have you covered no matter where you are loacted.All you need is an internet connection and a bank account",
   buttonLabel: "Learn More",
   imgStart: true,
-  img: svg2,
+  img: svg3,
   alt: "piggybank",
   dark: false,
   primary: false,
