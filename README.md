@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c5f78b14-37ba-45ff-b032-ad25c96fdd3e/deploy-status)](https://app.netlify.com/sites/vibrant-mcnulty-79c1d7/deploys)
+
 #Bitin Bank App
 
 Live URL:https://vibrant-mcnulty-79c1d7.netlify.app/
